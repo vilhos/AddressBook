@@ -12,6 +12,7 @@ namespace AddressBook_WinForm
         public Form1()
         {
             InitializeComponent();
+            //Change this path "C:\Users\User\source\repos\Address_Book\Database.mdf" for your own computer
             string DB = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\source\repos\Address_Book\Database.mdf;Integrated Security=True";
             connection = new SqlConnection(DB);
             connection.Open();
